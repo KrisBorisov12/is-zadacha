@@ -1,0 +1,193 @@
+:root {
+    /* variables for commonly used colors */
+    --mainBgColor: #121212;
+    --cardBgColor: #1E1E1E;
+    --primaryTextColor: #E0E0E0;
+    --secondaryTextColor: #BDBDBD;
+    --borderColor: #333333;
+    --mainWhite: #FFFFFF;
+    --darkBlue: #1A4395;
+    --lightBlue: #87B8E3;
+}
+
+html, body { 
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    background-color: var(--mainBgColor);
+    /* text on dark background is readable */
+    color: var(--primaryTextColor); 
+    
+
+}
+
+header {
+    /* for static header:) */
+    position: sticky; /*can be fixed aswell but small items misalign*/
+    top: -1px; 
+    z-index: 1000; 
+    width: 100%; 
+    background-color: var(--mainBgColor); 
+    color: var(--primaryTextColor);
+    padding: 10px 0; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5); 
+}
+
+main {
+    padding-top: 2vh; 
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-gap: 3vw;
+    padding: 0 2vw;
+}
+
+.grid-item {
+    background-color: var(--cardBgColor);
+    border: 1px solid var(--borderColor);
+    padding: 10px;
+    text-align: left;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2); 
+    border-radius: 8px; 
+}
+
+.grid-item h3 {
+    margin: 8px 0;
+    color: var(--primaryTextColor);
+}
+
+.grid-item p {
+    font-size: 0.8em;
+    margin: 8px 0;
+    color: var(--primaryTextColor); 
+}
+
+.grid-item a {
+    display: block;
+    font-size: small;
+    color: var(--lightBlue); 
+    text-decoration: none;
+}
+
+@media screen and (max-width: 400px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.left, .right {
+    display: block;
+}
+
+.index img {
+    width: 50px;
+    height: auto;
+    margin: 2% 0 0 2%;
+}
+
+.active {
+    border-bottom: 3px solid var(--lightBlue);
+}
+
+.links {
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: larger;
+    text-align: center;
+}
+
+.links a{
+color: var(--secondaryTextColor);
+}
+a {
+    color: var(--lightBlue);
+    background-color: transparent;
+}
+
+a:active {
+    color: var(--secondaryTextColor);
+}
+
+.marge {
+    margin-right: 10%;
+}
+
+#showAddContactFormBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-color: var(--lightBlue);
+    color: var(--mainBgColor);
+    border: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    font-size: 24px;
+    line-height: 56px;
+    text-align: center;
+    z-index: 1000;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s;
+}
+
+#showAddContactFormBtn:hover {
+    background-color: var(--darkBlue);
+}
+
+.right{
+    float: right;
+}
+.left{
+    float: left;
+}
+
+a{
+    text-decoration: none;
+}
+
+input[type="search"] { /*searchbar*/
+    width: calc(100% - 40px);
+    padding: 12px 20px;
+    margin: 10px 0;
+    
+    box-sizing: border-box;
+    background-color: var(--cardBgColor);
+    border: 2px solid var(--lightBlue);
+    border-radius: 30px;
+
+    font-size: 16px;
+    color: var(--primaryTextColor);
+    transition: border-color 0.3s ease;
+
+
+    ::placeholder {
+        color: var(--secondaryTextColor);
+    }
+}
+input[type="search"]:hover {
+    border-color: var(--darkBlue); 
+}
+
+
+input[type="search"]:focus {
+    outline: none;
+    border-color: var(--lightBlue);
+}
+
+.spacing {
+    margin: 0 0 2vh 0;
+}
+
+.top h1{
+    font-size: x-large;
+    margin-right: 5%;
+}

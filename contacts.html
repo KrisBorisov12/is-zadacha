@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Contacts</title>
+    <meta name="author" content="Christiyan Borisov">
+    <meta name="description" content="Contacts page of contacts application">
+    <meta name="keywords" content="project, internship, front-end">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+
+</head>
+
+<body class="index">
+    <header>
+        <div class="top">
+            <!-- text can be removed -->
+            <img src="images/logo.png" alt="">
+            <h1 class="right">Телефонен указател</h1>
+
+        </div>
+        <div class="links">
+            <h5 class=""> <span class=""><a href="index.html">Често набирани контакти</a> </span><span
+                    class="right active"><a href="contacts.html">Всички контакти</a></span>
+            </h5>
+        </div>
+        <!-- add contact btn (bottom right) -->
+        <button id="showAddContactFormBtn" class="right">+</button>
+
+        <form action="">
+            <input type="search" placeholder="Потърсете контакт">
+        </form>
+    </header>
+    <main>
+        <div>
+            <!-- contact form (hidden) -->
+            <!-- add contact details -->
+            <div id="addContactForm" style="display: none;">
+                <input type="text" id="newContactName" placeholder="Name">
+                <input type="text" id="newContactFamilyName" placeholder="Family Name">
+                <input type="text" id="newContactPosition" placeholder="Job Position">
+                <input type="email" id="newContactEmail" placeholder="Email">
+                <input type="tel" id="newContactPhone" placeholder="Phone">
+                <input type="text" id="newContactCity" placeholder="City">
+                <button id="addContactBtn">Add Contact</button>
+            </div>
+        </div>
+        <div class="grid-container">
+            <!-- grid items come here after being read from json -->
+        </div>
+    </main>
+
+    <!-- service worker registrator for PWA integration -->
+    <script src="service-worker-registrator.js"></script>
+    <script src="scripts/kontakti.js"></script>
+</body>
+
+</html>

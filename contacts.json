@@ -1,0 +1,101 @@
+[
+    {
+      "id": 1,
+      "name": "Иван",
+      "family_name": "Петров",
+      "job_position": "Системен администратор",
+      "email": "ivan.petrov@itcompany.bg",
+      "phone": "+359 2 123 4567",
+      "city": "София"
+    },
+    {
+      "id": 2,
+      "name": "Мария",
+      "family_name": "Иванова",
+      "job_position": "Разработчик на софтуер",
+      "email": "maria.ivanova@itcompany.bg",
+      "phone": "+359 2 765 4321",
+      "city": "Пловдив"
+    },
+    {
+      "id": 3,
+      "name": "Николай",
+      "family_name": "Георгиев",
+      "job_position": "Тестер на софтуер",
+      "email": "nikolay.georgiev@itcompany.bg",
+      "phone": "+359 2 987 6543",
+      "city": "Варна"
+    },
+    {
+      "id": 4,
+      "name": "Елена",
+      "family_name": "Димитрова",
+      "job_position": "Уеб дизайнер",
+      "email": "elena.dimitrova@itcompany.bg",
+      "phone": "+359 2 345 6789",
+      "city": "Бургас"
+    },
+    {
+      "id": 5,
+      "name": "Димитър",
+      "family_name": "Костадинов",
+      "job_position": "Продуктов мениджър",
+      "email": "dimitar.kostadinov@itcompany.bg",
+      "phone": "+359 2 123 9876",
+      "city": "Русе"
+    },
+    {
+      "id": 6,
+      "name": "Светла",
+      "family_name": "Христова",
+      "job_position": "Програмист",
+      "email": "svetla.hristova@itcompany.bg",
+      "phone": "+359 2 456 7890",
+      "city": "Стара Загора"
+    },
+    {
+      "id": 7,
+      "name": "Георги",
+      "family_name": "Тодоров",
+      "job_position": "Системен инженер",
+      "email": "georgi.todorov@itcompany.bg",
+      "phone": "+359 2 654 3210",
+      "city": "Плевен"
+    },
+    {
+      "id": 8,
+      "name": "Виктория",
+      "family_name": "Николова",
+      "job_position": "UI/UX дизайнер",
+      "email": "viktoria.nikolova@itcompany.bg",
+      "phone": "+359 2 321 6543",
+      "city": "Добрич"
+    },
+    {
+      "id": 9,
+      "name": "Петър",
+      "family_name": "Стоянов",
+      "job_position": "DevOps инженер",
+      "email": "petar.stoyanov@itcompany.bg",
+      "phone": "+359 2 789 0123",
+      "city": "Сливен"
+    },
+    {
+      "id": 10,
+      "name": "Лилия",
+      "family_name": "Михайлова",
+      "job_position": "Анализатор на данни",
+      "email": "liliya.mihailova@itcompany.bg",
+      "phone": "+359 2 456 1230",
+      "city": "Шумен"
+    },
+    {
+      "id": 11,
+      "name": "Антон",
+      "family_name": "Илиев",
+      "job_position": "Мрежов администратор",
+      "email": "anton.iliev@itcompany.bg",
+      "phone": "+359 2 678 5432",
+      "city": "Пазарджик"
+    }
+]
